@@ -18,7 +18,8 @@ namespace Security.Domain.Entities
         public bool JobInterview { get; set; } = true;
         public bool Visit { get; set; } = false;
 
-        public string Department { get; set; }
+        public int? BranchId { get; set; }
+        public int? UnitId { get; set; }
         public int personelId { get; set; }
         public Personel Personel { get; set; }
     }
