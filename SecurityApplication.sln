@@ -9,15 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{9EEB41B1-E7EB-4EB7-9D64-04AD4E25B16D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Application", "Core\Security.Application\Security.Application.csproj", "{828BB97A-7A4F-435F-AC39-57EA147DE757}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.Application", "Core\Security.Application\Security.Application.csproj", "{828BB97A-7A4F-435F-AC39-57EA147DE757}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Domain", "Core\Security.Domain\Security.Domain.csproj", "{F9AA1ACD-C2FA-4E62-B786-B66C51DD35FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.Domain", "Core\Security.Domain\Security.Domain.csproj", "{F9AA1ACD-C2FA-4E62-B786-B66C51DD35FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "security.Infrastructure", "Infrastructure\security.Infrastructure\security.Infrastructure.csproj", "{D4FB0292-D595-4135-991C-D8AA540A5310}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "security.Infrastructure", "Infrastructure\security.Infrastructure\security.Infrastructure.csproj", "{D4FB0292-D595-4135-991C-D8AA540A5310}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Persistence", "Infrastructure\Security.Persistence\Security.Persistence.csproj", "{AE16E9C9-B97D-48D9-B4F3-61A074FE07DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.Persistence", "Infrastructure\Security.Persistence\Security.Persistence.csproj", "{AE16E9C9-B97D-48D9-B4F3-61A074FE07DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.API", "Presentation\Security.API\Security.API.csproj", "{FFF7D907-BA74-4658-9C48-EE0B50EA436C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.API", "Presentation\Security.API\Security.API.csproj", "{FFF7D907-BA74-4658-9C48-EE0B50EA436C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Presention", "Security.Presention\Security.Presention.csproj", "{183C103A-DE08-47BC-BB6A-AB1A0181CA32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{FFF7D907-BA74-4658-9C48-EE0B50EA436C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFF7D907-BA74-4658-9C48-EE0B50EA436C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFF7D907-BA74-4658-9C48-EE0B50EA436C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{183C103A-DE08-47BC-BB6A-AB1A0181CA32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183C103A-DE08-47BC-BB6A-AB1A0181CA32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183C103A-DE08-47BC-BB6A-AB1A0181CA32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183C103A-DE08-47BC-BB6A-AB1A0181CA32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{D4FB0292-D595-4135-991C-D8AA540A5310} = {F43D6AC7-BA77-4A38-8BF0-FB4078922446}
 		{AE16E9C9-B97D-48D9-B4F3-61A074FE07DC} = {F43D6AC7-BA77-4A38-8BF0-FB4078922446}
 		{FFF7D907-BA74-4658-9C48-EE0B50EA436C} = {9EEB41B1-E7EB-4EB7-9D64-04AD4E25B16D}
+		{183C103A-DE08-47BC-BB6A-AB1A0181CA32} = {9EEB41B1-E7EB-4EB7-9D64-04AD4E25B16D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {005A8643-8215-4372-B2D6-85C981F02E88}
