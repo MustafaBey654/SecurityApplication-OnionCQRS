@@ -20,7 +20,7 @@ namespace Security.Domain.Entities
 
         public int? BranchId { get; set; }
         public int? UnitId { get; set; }
-        public int personelId { get; set; }
+        public int PersonelId { get; set; }
         public Personel Personel { get; set; }
     }
 }
