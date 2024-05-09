@@ -1,6 +1,12 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
 using Security.Presention;
+using Security.Persistence;
+using MediatR;
+using Security.Domain.Entities.Identity;
+using Security.Persistence.Context;
+using Security.Application.Services.AppServices;
+using Security.Persistence.Services.AppServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +14,15 @@ var builder = WebApplication.CreateBuilder(args);
 // presentation katmanýnda controller tanýmlamak için
 builder.Services.AddControllers()
     .AddApplicationPart(typeof(AssemblyReference).Assembly);
+//user role 
+builder.Services.AddIdentity<AppUser, AppRole>()
+    .AddEntityFrameworkStores<AppDbContext>(); 
 
+builder.Services.AddTransient<IBranchService,BranchService>();
+
+//Mediatr library import
+builder.Services.AddMediatR(typeof(Security.Application.AppAssemblyReference).Assembly);
+builder.Services.AddAutoMapper(typeof(Security.Persistence.MyAssemblyReference).Assembly);
 
 
 builder.Services.AddEndpointsApiExplorer();
@@ -40,6 +54,7 @@ builder.Configuration
     .SetBasePath(env.ContentRootPath)
     .AddJsonFile("appsettings.json", optional: false)
     .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+builder.Services.AddPersistenceLayerService(builder.Configuration);
 
 
 var app = builder.Build();
